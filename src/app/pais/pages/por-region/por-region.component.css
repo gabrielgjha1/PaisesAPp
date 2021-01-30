@@ -1,0 +1,22 @@
+button {
+  margin-right: 15px;
+}
+.btn-outline-info{
+
+  border: solid 1px  #4A235A ;
+  color: black;
+}
+.btn-outline-info:hover{
+
+  background: #4A235A ;
+  color: white;
+}
+
+
+
+
+.btn-info{
+
+  background: #4A235A ;
+  color: white;
+}

@@ -1,0 +1,28 @@
+
+<div class="table-responsive p-3">
+
+  <table *ngIf="MostrarTabla"  class="table ">
+    <thead class="morado">
+      <tr>
+        <th class="text-white text-center"  scope="col">#</th>
+        <th class="text-white text-center" scope="col">Bandera</th>
+        <th class="text-white text-center" scope="col">Nombre</th>
+        <th class="text-white text-center" scope="col">Población</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="bg-white">
+      <tr *ngFor="let item of paises">
+        <th class="text-center"  scope="row">1</th>
+        <td class="text-center" ><img src="{{item.flag}}" class="small-flag" alt=""></td>
+        <td class="text-center" >{{item.capital}},{{item.name}}</td>
+        <td class="text-center" >{{item.population | number}}</td>
+        <td class="text-center" >
+          <a [routerLink]="['/pais',item.alpha2Code]" href="">ver</a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+

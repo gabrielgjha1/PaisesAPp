@@ -1,0 +1,8 @@
+li {
+  cursor:pointer;
+  border: solid 0.1px rgb(175, 175, 175);
+}
+
+.active {
+  background: #4A235A ;
+}
