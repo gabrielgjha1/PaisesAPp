@@ -4,9 +4,9 @@
 
 <h5 style="font-weight: 700;" >Seleccione la región</h5>
 <div class="row justify-content-center">
-  <div class="col-xl-6 col-lg-12 col-md-12 col-12">
-    <button (click)="activarRegion(item)"
-    class="btn btn-outline-info  mr-5"
+  <div class="col-xl-6 col-lg-12 col-md-12 col-12 ">
+    <button    (click)="activarRegion(item)"
+    class="btn btn-outline-info mt-2 mr-5"
     [class]="getclasesCSS(item)"
     *ngFor="let item of regiones" >
       {{item}}
@@ -16,7 +16,7 @@
 <div class="animate__animated animate__backInDown">
 
   <div class="row mb-5 ">
-    <app-pais-tablac class="" [MostrarTabla]="MostrarTabla"  [paises]="paises"  ></app-pais-tablac>
+    <app-pais-tablac class="" nombre="de la región"  [MostrarTabla]="MostrarTabla"  [paises]="paises"  ></app-pais-tablac>
   </div>
 </div>
 </div>

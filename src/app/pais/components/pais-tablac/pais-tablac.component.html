@@ -1,5 +1,5 @@
 
-<div class="table-responsive p-3">
+<div class="table-responsive">
 
   <table *ngIf="MostrarTabla"  class="table ">
     <thead class="morado">
@@ -13,7 +13,7 @@
     </thead>
     <tbody class="bg-white">
       <tr *ngFor="let item of paises">
-        <th class="text-center"  scope="row">1</th>
+        <th class="text-center "  scope="row">1</th>
         <td class="text-center" ><img src="{{item.flag}}" class="small-flag" alt=""></td>
         <td class="text-center" >{{item.capital}},{{item.name}}</td>
         <td class="text-center" >{{item.population | number}}</td>
